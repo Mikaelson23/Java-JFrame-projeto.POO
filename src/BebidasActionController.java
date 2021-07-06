@@ -7,6 +7,7 @@ import java.util.List;
 public class BebidasActionController implements ActionListener {
     private JanelaGUIV2 janelaMain;
     private CardapioList sistema;
+    private JButton alcoolica, naoAlcoolica;
 
     public BebidasActionController(JanelaGUIV2 janelaGUIV2, CardapioList cardapio) {
         this.janelaMain = janelaGUIV2;
@@ -22,19 +23,39 @@ public class BebidasActionController implements ActionListener {
         janelaCardapioBebida.setResizable(false);
         janelaCardapioBebida.setBackground(Color.ORANGE);
         janelaCardapioBebida.setVisible(true);
+        
+        JPanel topo = new JPanel();
+        alcoolica = new JButton("Alcoolica");
+        alcoolica.setBackground(Color.orange);
+        alcoolica.setEnabled(false);
+        naoAlcoolica = new JButton("sem alcool");
+        naoAlcoolica.setBackground(Color.PINK);
+        naoAlcoolica.setEnabled(false);
+        topo.add(alcoolica);
+        topo.add(naoAlcoolica);
+
         List<Bebida> cardapioNovoBebida = sistema.mostrarCardapioBebida();
-        int valor = cardapioNovoBebida.size()/2 + 1;
-        janelaCardapioBebida.setLayout(new GridLayout(valor, 3));
+        janelaCardapioBebida.setLayout(new BorderLayout(5,5));
+        JPanel mostrarBebidas = new JPanel();
+        mostrarBebidas.setLayout(new GridLayout(3,cardapioNovoBebida.size()));
 
         for(Bebida u : cardapioNovoBebida){
             JButton a = new JButton(u.getNome());
             a.addActionListener(new mostrarSobreBebida(u));
-            janelaCardapioBebida.add(a);
+            if(u.isAlcoolica()){
+                a.setBackground(Color.orange);
+            }else{
+                a.setBackground(Color.PINK);
+            }
+            mostrarBebidas.add(a);
         }
+        JScrollPane rolagem = new JScrollPane(mostrarBebidas);
+        janelaCardapioBebida.add(topo, BorderLayout.NORTH);
+        janelaCardapioBebida.add(rolagem, BorderLayout.CENTER);
 
         JButton voltar = new JButton("Voltar");
         voltar.addActionListener(new voltarJanela(janelaCardapioBebida, janelaMain));
-        janelaCardapioBebida.add(voltar);
+        janelaCardapioBebida.add(voltar, BorderLayout.SOUTH);
     }
 
     private class mostrarSobreBebida implements ActionListener {
