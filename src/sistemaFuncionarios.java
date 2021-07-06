@@ -44,10 +44,15 @@ public class sistemaFuncionarios implements ActionListener {
         voltar = new JButton("Voltar");
         voltar.addActionListener(new voltarJanela(janelaFuncionarios,janela));
 
-        double validacao = Double.parseDouble(JOptionPane.showInputDialog(null, "senha:\n"));
-        if(senha == 1234){
-            janelaFuncionarios.setVisible(true);
-        }else{
+        try {
+            double validacao = Double.parseDouble(JOptionPane.showInputDialog(null, "senha:\n"));
+            if(validacao == senha){
+                janelaFuncionarios.setVisible(true);
+            }else{
+                janelaFuncionarios.dispose();
+                janela.setVisible(true);
+            }
+        }catch(NullPointerException validacao){
             janelaFuncionarios.dispose();
             janela.setVisible(true);
         }
