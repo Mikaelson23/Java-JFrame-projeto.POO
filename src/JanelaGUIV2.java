@@ -8,8 +8,7 @@ public class JanelaGUIV2 extends JFrame {
     JToolBar tollBarPedidos, toolBar;
     JButton pedidoComida, pedidoBebida;
     JLabel linha2;
-    private String imagem = "Images" + File.separator + "giphy.gif";
-    private String imagemVoltar = "Images" + File.separator + "voltar.png";
+    private String imagem = "Images" + File.separator + "restaurante.png";
     ImageIcon Img = new ImageIcon(imagem);
     CardapioList cardapio = new CardapioList();
 
@@ -31,6 +30,9 @@ public class JanelaGUIV2 extends JFrame {
 
         tollBarPedidos.add(pedidoComida);
         tollBarPedidos.add(pedidoBebida);
+
+        pedidoComida.setBackground(new Color(176,196,222));
+        pedidoBebida.setBackground(new Color(176,196,222));
 
         JButton menuCardapio = new JButton("Cardapio");
         menuCardapio.addActionListener(new mostrarComidasAction(this,cardapio));
@@ -55,6 +57,12 @@ public class JanelaGUIV2 extends JFrame {
         toolBar.add(menuSistema);
         toolBar.add(menuFuncionarios);
         toolBar.add(menuSair);
+        menuCardapio.setBackground(new Color(176,196,222));
+        menuMostrarBebidas.setBackground(new Color(176,196,222));
+        menuSistema.setBackground(new Color(176,196,222));
+        menuFuncionarios.setBackground(new Color(176,196,222));
+        menuSair.setBackground(new Color(250,128,114));
+
         toolBar.setFloatable(false);
         tollBarPedidos.setFloatable(false);
 
@@ -101,5 +109,3 @@ public class JanelaGUIV2 extends JFrame {
         JFrame janela = new JanelaGUIV2();
     }
 }
-
-
