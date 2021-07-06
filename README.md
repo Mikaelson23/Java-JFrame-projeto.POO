@@ -14,7 +14,7 @@ o almoco em *Bisque*, o café da manhã em *PaleTurquoise* e o jantar em *Powder
 com os codigos mostrados no site:
 - https://celke.com.br/artigo/tabela-de-cores-html-nome-hexadecimal-rgb
 
-![Exemplo2](https://github.com/Mikaelson23/Restaurante-/blob/main/Images/JanelaCardapioComida.png)
+![Exemplo2](https://github.com/Mikaelson23/Restaurante-/blob/main/Images/JanelaCardapioComida2.0.png)
 - Ex.2
 # Janela para pedidos 
 ![Exemplo3](https://github.com/Mikaelson23/Restaurante-/blob/main/Images/JanelaPedidoComida.png)
