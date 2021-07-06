@@ -32,10 +32,9 @@ iram chegar.
 
 
 # Autores 
-- Mikaelson Wemeson
-- https://www.linkedin.com/in/read-about-me/
-- Mikaelson Wemeson 
+Mikaelson Wemeson
 https://www.linkedin.com/in/read-about-me/
+
 
 ## Uml do projeto 
 ![Exemplo6](https://github.com/Mikaelson23/Restaurante-/blob/main/UML.png)
