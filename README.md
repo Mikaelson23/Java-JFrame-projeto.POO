@@ -38,4 +38,4 @@ iram chegar.
 https://www.linkedin.com/in/read-about-me/
 
 ## Uml do projeto 
-![Exemplo6](https://github.com/Mikaelson23/Projeto-Restaurante/blob/main/UML-Readme/UML.png)
+![Exemplo6](https://github.com/Mikaelson23/Restaurante-/blob/main/UML.png)
