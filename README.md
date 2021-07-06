@@ -6,7 +6,7 @@ Para quem gerencia o programa é possivel fazer altereções no cardapio **(Ex.4
 - O conceito de comida varia entre 3 opcoes no cardapio, café da manhã, almoço e jantar, diferenciados por cores **(Ex.2)**
 
 # Janela inicial
-![Exemplo1](https://github.com/Mikaelson23/Restaurante-/blob/main/Images/JanelaInicial.png)
+![Exemplo1](https://github.com/Mikaelson23/Restaurante-/blob/main/Images/JanelaInicial2.0.png)
 - Ex.1
 # Janela do cardapio
 Em cores pasteis as comidas apresentadas nos JButtons, diferenciados por; 
