@@ -45,10 +45,12 @@ public class sistemaFuncionarios implements ActionListener {
         voltar.addActionListener(new voltarJanela(janelaFuncionarios,janela));
 
         try {
-            double validacao = Double.parseDouble(JOptionPane.showInputDialog(null, "senha:\n"));
+            double validacao = Double.parseDouble(JOptionPane.showInputDialog(null, "senha:\n","validação",JOptionPane.INFORMATION_MESSAGE));
             if(validacao == senha){
+                janela.setVisible(false);
                 janelaFuncionarios.setVisible(true);
             }else{
+                JOptionPane.showMessageDialog(null, "Senha Incorreta","validação",JOptionPane.INFORMATION_MESSAGE);
                 janelaFuncionarios.dispose();
                 janela.setVisible(true);
             }
