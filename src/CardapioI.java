@@ -29,6 +29,6 @@ public interface CardapioI {
 
     public boolean removerComida(Comida comida);
 
-    public boolean removerBebida(Comida comida);
+    public boolean removerBebida(Bebida bebida);
     
 }
