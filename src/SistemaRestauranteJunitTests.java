@@ -80,7 +80,7 @@ public class SistemaRestauranteJunitTests {
         bebidaList.add(pedidoBebida);
         bebidaList.add(pedidoBebida2);
         bebidaList.add(pedidoBebida3);
-        assertTrue(pedidos.fazerPedido(cliente, bebidaList));
+        assertTrue(pedidos.fazerPedido(cliente2, bebidaList));
 
         ///Aqui vamos estar testar se o objeto que pesquisamos é de fato o que esta sendo comparado
         assertNotSame(sistema.pesquisaComidaPorNome("a"), novaComida2);
