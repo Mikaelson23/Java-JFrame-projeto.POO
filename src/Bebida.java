@@ -37,9 +37,9 @@ public class Bebida implements Serializable {
     }
 
     public String toString(){
-        return "\n| Nome: " + getNome() + "\n| " +
-                "Valor: " + getValor() + "\n| " +
-                "é alcoolica? " + String.valueOf(isAlcoolica()) + "\n";
+        return "\n|Nome: " + getNome() + "\n|" +
+                "Valor: " + getValor() + "\n|" +
+                "é alcoolica? " + String.valueOf(isAlcoolica());
     }
 
 
