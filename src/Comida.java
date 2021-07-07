@@ -57,9 +57,9 @@ public class Comida implements Serializable{
     }
 
     public String toString() {
-        return  "|Prato do dia: " + getDia() + "\n |" +
-                "Nome do prato: " + getNome() + "\n |" +
-                "Descrição do prato: " + getDescricao() + "\n |" +
-                "Valor:  $" + getValor() + "\n";
+        return  "\n|Prato do dia: " + getDia() + "\n|" +
+                "Nome do prato: " + getNome() + "\n|" +
+                "Descrição do prato: " + getDescricao() + "\n|" +
+                "Valor:  $" + getValor();
     }
 }
