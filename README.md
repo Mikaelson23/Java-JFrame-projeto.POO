@@ -34,6 +34,10 @@ iram chegar.
 # Autores 
 Mikaelson Wemeson
 https://www.linkedin.com/in/read-about-me/
+Kelner Xavier
+https://www.linkedin.com/in/kelner-xavier-91235b150/
+Fabiano Wanderlan
+
 
 
 ## Uml do projeto 
